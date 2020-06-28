@@ -1,7 +1,7 @@
-const filter = () => {
-   const menu = document.querySelector('.portfolio-menu'),
-         wrapper = document.querySelector('.portfolio-wrapper'),
-         no = document.querySelector('.portfolio-no');
+const filter = (menuSelector, wrapperSelector, noItemProfile) => {
+   const menu = document.querySelector(menuSelector),
+         wrapper = document.querySelector(wrapperSelector),
+         no = document.querySelector(noItemProfile);
 
 
    menu.children.forEach(btn => btn.addEventListener('click', (e) =>  {
